@@ -1,0 +1,76 @@
+<nav class="bg-[#F8F9FB] border-none shadow-none w-full md:w-[70%] mx-auto px-4 md:px-0 py-4">
+    <div class="flex items-center justify-between">
+        <!-- Logo and Product Name -->
+        <div class="flex-shrink-0 flex items-center gap-4">
+            <img src="/images/logo.png" alt="Logo" class="h-8">
+            <span class="font-['Poppins'] text-[30px] font-bold text-[#173A56]">Product</span>
+        </div>
+
+        <!-- Desktop Navigation -->
+        <div class="hidden md:flex items-center space-x-8">
+            <a href="#" class="font-['Poppins'] text-base font-[600] leading-[28px]">Product</a>
+            <a href="#" class="font-['Poppins'] text-base font-normal leading-[28px] hover:scale-110 transition-transform">Customers</a>
+            <a href="#" class="font-['Poppins'] text-base font-normal leading-[28px] hover:scale-110 transition-transform">Pricing</a>
+            <a href="#" class="font-['Poppins'] text-base font-normal leading-[28px] hover:scale-110 transition-transform">Resources</a>
+        </div>
+
+        <!-- Auth Buttons -->
+        <div class="hidden md:flex items-center space-x-4">
+            <button class="px-8 py-3 text-[#173A56] font-['Poppins'] font-semibold text-base border border-[#BCD0E5] rounded-[4px] hover:bg-gray-50 transition-colors">
+                Sign In
+            </button>
+            <button class="px-8 py-3 bg-[#02897A] text-white font-['Poppins'] font-semibold text-base rounded-[4px] hover:bg-[#02796e] transition-colors">
+                Sign Up
+            </button>
+        </div>
+
+        <!-- Theme Toggle Button -->
+        <button id="theme-toggle" 
+                class="p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors duration-200"
+                onclick="console.log('Button clicked')">
+            <img src="/images/theme.png" 
+                 alt="Theme Toggle" 
+                 id="theme-icon"
+                 class="w-6 h-6 transition-transform duration-300 dark:invert">
+        </button>
+
+        <!-- Mobile Menu Button -->
+        <div class="md:hidden">
+            <button class="p-2 focus:outline-none" aria-label="Menu" id="mobile-menu-button">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 12H21" stroke="#173A56" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M3 6H21" stroke="#173A56" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M3 18H21" stroke="#173A56" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+
+            <!-- Mobile Menu Panel -->
+            <div class="hidden fixed inset-0 z-50 bg-white" id="mobile-menu">
+                <div class="p-4">
+                    <div class="flex justify-end">
+                        <button class="p-2" id="close-menu-button">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18 6L6 18" stroke="#173A56" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M6 6L18 18" stroke="#173A56" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="flex flex-col space-y-4 mt-4">
+                        <a href="#" class="font-['Poppins'] text-base font-[600] leading-[28px]">Product</a>
+                        <a href="#" class="font-['Poppins'] text-base font-normal leading-[28px]">Customers</a>
+                        <a href="#" class="font-['Poppins'] text-base font-normal leading-[28px]">Pricing</a>
+                        <a href="#" class="font-['Poppins'] text-base font-normal leading-[28px]">Resources</a>
+                        <div class="pt-4 flex flex-col space-y-4">
+                            <button class="px-8 py-3 text-[#173A56] font-['Poppins'] font-semibold text-base border border-[#BCD0E5] rounded-[4px]">
+                                Sign In
+                            </button>
+                            <button class="px-8 py-3 bg-[#02897A] text-white font-['Poppins'] font-semibold text-base rounded-[4px]">
+                                Sign Up
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
