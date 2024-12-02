@@ -1,45 +1,216 @@
-<main class="relative w-full">
+<!DOCTYPE html>
+<main
+  class="relative w-full clip-ellipse from-[#EDEDED] to-[##FFFFFF00] mb-[150px]"
+>
   <!-- Grey section with curve -->
-  <div class="absolute inset-0 bg-[#F8F9FB] dark:bg-[#1F2E35]">
-    <div class="absolute -bottom-[90px] left-0 right-0 h-48">
-      <svg class="absolute bottom-0 w-full h-full" preserveAspectRatio="none" viewBox="0 0 1440 192" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M0 0C240 80 480 120 720 120C960 120 1200 80 1440 0V192H0V0Z" fill="white" class="dark:fill-[#22343D]"/>
-      </svg>
-    </div>
-  </div>
+  <!-- <div
+    class="absolute inset-0 bg-gradient-to-b from-[#ffffff] to-[#EDEDED] dark:bg-dark-bg transition-colors duration-200"
+  ></div> -->
 
   <!-- Existing content -->
-  <div class="relative w-full md:w-[70%] md:mx-auto py-12 md:py-20 flex flex-col md:flex-row items-center justify-between px-4 md:px-0">
-    <div class="order-2 md:order-1 text-center md:text-left mt-8 md:mt-0" 
-         data-aos="fade-right" data-aos-duration="1000">
-        <h1 class="text-3xl md:text-[40px] font-bold text-secondary dark:text-dark-text leading-[60px] mb-4 md:mb-8">
-            Work at the speed <br> of thought
-        </h1>
-        
-        <p class="text-base md:text-lg text-secondary dark:text-dark-muted font-normal leading-7 max-w-lg">
-            Tools, tutorials, design and innovation experts, all in one place!
-            The most intuitive way to imagine your next user experience.
-        </p>
-    
-        <div class="mt-8 flex flex-col md:flex-row items-center justify-center md:justify-start space-y-4 md:space-y-0">
-            <button class="bg-[#02897A] text-white rounded-[4px] w-full md:w-[175px] h-[53px] font-bold hover:bg-[#02796e] transition-colors duration-300">
-                Get started
-            </button>
-            <div class="flex items-center md:ml-[30px]">
-                <img src="/images/play.svg" alt="Play" class="w-[18px] h-[18px]">
-                <button class="ml-[8.5px] text-[#02897A] font-['Poppins'] text-base font-semibold leading-6 hover:text-[#02796e] transition-colors duration-300 underline underline-offset-4 decoration-[#02897A] hover:decoration-[#02796e]">
-                    Watch the Video
-                </button>
-            </div>
+  <div
+    class="relative w-full container md:w-[90%] md:mx-auto py-12 md:py-20 flex flex-col [@media(min-width:840px)]:flex-row items-center justify-between px-4 md:px-[13px]"
+  >
+    <div
+      class="order-2 [@media(min-width:840px)]:order-1 text-center md:text-left mt-8 md:mt-0"
+      data-aos="fade-right"
+      data-aos-duration="1000"
+    >
+      <h1
+        class="text-3xl md:text-[40px] font-['Poppins'] font-bold text-secondary dark:text-dark-text leading-[60px] mb-4 md:mb-8 transition-colors duration-200"
+      >
+        Work at the speed <br />
+        of thought
+      </h1>
+
+      <p
+        class="text-[18px] md:text-lg text-secondary font-['Poppins'] dark:text-dark-muted font-normal leading-[28px] max-w-lg transition-colors duration-200"
+      >
+        Tools, tutorials, design and innovation experts, all in one place! The
+        most intuitive way to imagine your next user experience.
+      </p>
+
+      <div
+        class="mt-8 flex flex-row gap-x-[28px] items-center justify-center md:justify-start"
+      >
+        <button
+          class="bg-[#02897a] transition-all duration-300 transform hover:scale-105 hover:shadow-lg dark:hover:bg-[#02897A]/40 text-[16px] leading-[24px] font-['Poppins'] text-white rounded-[4px] w-[142px] md:w-[175px] h-[53px] font-bold hover:bg-primary-dark"
+        >
+          Get started
+        </button>
+        <div
+          class="flex items-center transform hover:scale-105 duration-300 md:ml-[30px] cursor-pointer"
+        >
+          <!-- Play Icon Svg -->
+          <svg
+            width="17"
+            height="19"
+            viewBox="0 0 17 19"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M15.8516 8.53032C16.591 8.96531 16.591 10.0347 15.8516 10.4697L2.1954 18.5027C1.44543 18.9439 0.5 18.4031 0.5 17.533V1.46697C0.5 0.596876 1.44543 0.0561381 2.1954 0.497293L15.8516 8.53032Z"
+              fill="#02897A"
+            />
+          </svg>
+
+          <button
+            class="ml-[8.5px] transform hover:scale-105 text-[#02897a] font-['Poppins'] text-base font-semibold leading-6 hover:text-primary-dark transition-colors duration-300 underline underline-offset-4 decoration-primary hover:decoration-primary-dark"
+          >
+            Watch the Video
+          </button>
         </div>
+      </div>
     </div>
 
     <!-- Hero Image -->
-    <div class="order-1 md:order-2" data-aos="fade-left" data-aos-delay="200">
-        <img src="/images/people.png" alt="Hero" class="w-full max-w-lg transform hover:scale-105 transition-all duration-300">
+    <div class="order-1 [@media(min-width:840px)]:order-2" data-aos="fade-left">
+      <img
+        src="/svgs/community.svg"
+        alt="Hero"
+        class="w-full max-w-lg transform hover:scale-105 transition-all duration-300"
+        data-aos="fade-left"
+      />
     </div>
   </div>
 
-</main>
-</div>
+  <section class="relative w-full bg-no-repeat bg-center bg-cover">
+    <div class="container w-full mx-auto px-4 md:px-12 mt-16">
+      <h2
+        class="font-['Poppins'] text-[32px] font-bold leading-[48px] text-center mb-8 text-secondary dark:text-dark-text transition-colors duration-200"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
+        Product was Built Specifically<br />
+        for You
+      </h2>
 
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-[87px]"
+      >
+        <!-- First click tests -->
+        <div
+          class="space-y-4 flex flex-col items-center justify-center md:items-start"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
+          <div
+            class="w-[50px] h-[50px] rounded-[19px] bg-primary flex items-center justify-center"
+          >
+            <img
+              src="/svgs/first-click-test.svg"
+              alt="First click"
+              class="w-full h-full items-center justify-center"
+            />
+          </div>
+          <h3
+            class="font-['Poppins'] text-center text-[22px] md:text-left font-semibold leading-[33px] text-secondary dark:text-dark-text transition-colors duration-200"
+          >
+            First click tests
+          </h3>
+          <p
+            class="font-['Poppins'] md:text-left text-center text-base font-normal leading-[26px] text-secondary dark:text-dark-muted transition-colors duration-200"
+          >
+            While most people enjoy casino gambling
+          </p>
+        </div>
+
+        <!-- Design surveys -->
+        <div
+          class="space-y-4 flex flex-col items-center justify-center md:items-start"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
+          <div
+            class="w-[50px] h-[50px] rounded-[19px] bg-[#4D8DFF] flex items-center justify-center"
+          >
+            <img
+              src="/svgs/design-survey.svg"
+              alt="Design surveys"
+              class="w-full h-full"
+            />
+          </div>
+          <h3
+            class="font-['Poppins'] text-center text-[22px] md:text-left font-semibold leading-[33px] text-secondary dark:text-dark-text transition-colors duration-200"
+          >
+            Design surveys
+          </h3>
+          <p
+            class="font-['Poppins'] md:text-left text-center text-base font-normal leading-[26px] text-secondary dark:text-dark-muted transition-colors duration-200"
+          >
+            Sports betting, lottery and bingo playing for the fun
+          </p>
+        </div>
+
+        <!-- Preference tests -->
+        <div
+          class="space-y-4 flex flex-col items-center justify-center md:items-start"
+          data-aos="fade-up"
+          data-aos-delay="300"
+        >
+          <div
+            class="w-[50px] h-[50px] rounded-[19px] bg-[#740A76] flex items-center justify-center"
+          >
+            <img
+              src="/svgs/preference-test.svg"
+              alt="Preference tests"
+              class="w-full h-full"
+            />
+          </div>
+          <h3
+            class="font-['Poppins'] text-center text-[22px] md:text-left font-semibold leading-[33px] text-secondary dark:text-dark-text transition-colors duration-200"
+          >
+            Preference tests
+          </h3>
+          <p
+            class="font-['Poppins'] md:text-left text-center text-base font-normal leading-[26px] text-secondary dark:text-dark-muted transition-colors duration-200"
+          >
+            The Myspace page defines the individual
+          </p>
+        </div>
+
+        <!-- Five second tests -->
+        <div
+          class="space-y-4 flex flex-col items-center justify-center md:items-start"
+          data-aos="fade-up"
+          data-aos-delay="400"
+        >
+          <div
+            class="w-[50px] h-[50px] rounded-[19px] bg-[#F03E3D] flex items-center justify-center"
+          >
+            <img
+              src="/svgs/timer.svg"
+              alt="Five second tests"
+              class="w-full h-full"
+            />
+          </div>
+          <h3
+            class="font-['Poppins'] text-[22px] text-center md:text-left font-semibold leading-[33px] text-secondary dark:text-dark-text transition-colors duration-200"
+          >
+            Five second tests
+          </h3>
+          <p
+            class="font-['Poppins'] md:text-left text-center text-base font-normal leading-[26px] text-secondary dark:text-dark-muted transition-colors duration-200"
+          >
+            Personal choices and the overall personality of the person
+          </p>
+        </div>
+      </div>
+
+      <div
+        class="text-center mt-[108px] pb-[100px]"
+        data-aos="fade-up"
+        data-aos-delay="500"
+      >
+        <button
+          class="bg-[#02897A] duration-300 transform hover:scale-105 hover:shadow-lg dark:hover:bg-[#02897A]/40 text-white py-[14px] px-[32px] rounded-[4px] text-[16px] font-bold leading-[24px] text-center hover:bg-primary-dark transition-all"
+        >
+          SIGN UP NOW
+        </button>
+      </div>
+    </div>
+  </section>
+</main>

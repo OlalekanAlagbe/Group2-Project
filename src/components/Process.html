@@ -1,53 +1,129 @@
-<section class="bg-white dark:bg-dark-bg transition-colors duration-200 py-12 px-4 sm:px-6 lg:px-8">
-    <div style="background-image: url('/images/Bg-up.png');" 
-         class="w-full md:w-[70%] mx-auto px-4 md:px-0 text-center bg-cover bg-center py-16 rounded-2xl dark:bg-opacity-10">
-        <h2 class="text-1xl md:text-2xl font-bold text-slate-800 mb-4 scroll-animate" data-aos="fade-up">
-            Quick & Easy Process
-        </h2>
-        <p class="text-gray-700 mb-12 scroll-animate" data-aos="fade-up" data-aos-delay="100">
-            Do you require some help for your project: Conception workshop, 
-            prototyping, marketing strategy, landing page, UX/UI?
-        </p>
-
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 place-items-center max-w-4xl mx-auto">
-            <!-- Chat Bubbles -->
-            <div class="flex items-center scroll-animate" data-aos="fade-right" data-aos-delay="200">
-                <img src="/images/Avator-1.jpg" alt="Pitch Image" 
-                     class="h-[98px] w-[98px] rounded-full mr-4 transform hover:scale-110 transition-all duration-300 shadow-lg">
-                <div class="bg-white shadow-md px-[30px] py-[15px] rounded-[10px] hover:shadow-xl transition-all duration-300">
-                    <p class="font-medium text-gray-900">I can take care of your pitch</p>
-                </div>
-            </div>
-
-            <div class="flex items-center scroll-animate" data-aos="fade-left" data-aos-delay="300">
-                <div class="order-2 bg-white shadow-md px-[30px] py-[15px] rounded-[10px] hover:shadow-xl transition-all duration-300">
-                    <p class="font-medium text-gray-900">I can prototype your app</p>
-                </div>
-                <img src="/images/Avator-2.jpg" alt="Prototype Image" 
-                     class="order-1 h-[98px] w-[98px] rounded-full ml-4 transform hover:scale-110 transition-all duration-300 shadow-lg">
-            </div>
-
-            <div class="flex items-center scroll-animate" data-aos="fade-right" data-aos-delay="400">
-                <img src="/images/Avator-3.jpg" alt="Website Image" 
-                     class="h-[98px] w-[98px] rounded-full mr-4 transform hover:scale-110 transition-all duration-300 shadow-lg">
-                <div class="bg-white shadow-md px-[30px] py-[15px] rounded-[10px] hover:shadow-xl transition-all duration-300">
-                    <p class="font-medium text-gray-900">I can design you website</p>
-                </div>
-            </div>
-
-            <div class="flex items-center scroll-animate" data-aos="fade-left" data-aos-delay="500">
-                <div class="order-2 bg-white shadow-md px-[30px] py-[15px] rounded-[10px] hover:shadow-xl transition-all duration-300">
-                    <p class="font-medium text-gray-900">I can help marketing strategy</p>
-                </div>
-                <img src="/images/Avator-4.jpg" alt="Marketing Image" 
-                     class="order-1 h-[98px] w-[98px] rounded-full ml-4 transform hover:scale-110 transition-all duration-300 shadow-lg">
-            </div>
-        </div>
-
-        <div class="mt-12 scroll-animate" data-aos="fade-up" data-aos-delay="600">
-            <button class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-green-900 hover:bg-green-600 transition-all duration-300 transform hover:scale-105 hover:shadow-lg">
-                Contact our expert
-            </button>
-        </div>
+<!DOCTYPE html>
+<section
+  class="bg-light dark:bg-dark-bg transition-colors duration-200 py-12 px-4 sm:px-6 lg:px-8"
+>
+  <div
+    class="w-full md:w-[70%] container mx-auto px-4 md:px-0 text-center py-16 rounded-2xl"
+  >
+    <div class="flex items-center justify-center w-full flex-col gap-y-[16px]">
+      <h2
+        class="text-1xl md:text-2xl font-bold text-secondary dark:text-dark-text mb-4 scroll-animate transition-colors duration-200"
+        data-aos="fade-up"
+      >
+        Quick &amp; Easy Process
+      </h2>
+      <p
+        class="text-secondary dark:text-dark-muted mb-12 scroll-animate transition-colors max-w-[542px] text-center duration-200"
+        data-aos="fade-up"
+        data-aos-delay="100"
+      >
+        Do you require some help for your project: Conception workshop,
+        prototyping, marketing strategy, landing page, UX/UI?
+      </p>
     </div>
-</section> 
+
+    <div class="flex flex-col w-full gap-y-[24px]">
+      <!-- Chat Bubbles Topside -->
+      <div
+        class="flex w-full flex-col gap-y-[32px] [@media(min-width:1200px)]:flex-row justify-between items-center"
+      >
+        <div
+          class="flex items-center gap-x-[15px] scroll-animate"
+          data-aos="fade-right"
+          data-aos-delay="200"
+        >
+          <img
+            src="/images/Avator-1.jpg"
+            alt="Pitch Image"
+            class="h-[98px] w-[98px] rounded-full mr-4 transform hover:scale-110 transition-all duration-300 shadow-lg dark:shadow-white/10"
+          />
+          <div
+            class="bg-white dark:bg-dark-secondary shadow-md dark:shadow-white/10 px-[30px] py-[15px] rounded-[10px] hover:shadow-xl transition-all duration-300"
+          >
+            <p
+              class="font-medium text-secondary dark:text-[#2F281E] transition-colors duration-200"
+            >
+              I can take care of your pitch
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="flex flex-row-reverse items-center gap-x-[15px] scroll-animate"
+          data-aos="fade-left"
+          data-aos-delay="300"
+        >
+          <div
+            class="order-2 bg-white dark:bg-dark-secondary shadow-md dark:shadow-white/10 px-[30px] py-[15px] rounded-[10px] hover:shadow-xl transition-all duration-300"
+          >
+            <p
+              class="font-medium text-secondary dark:text-[#2F281E] transition-colors duration-200"
+            >
+              I can prototype your app
+            </p>
+          </div>
+          <img
+            src="/images/Avator-2.jpg"
+            alt="Prototype Image"
+            class="order-1 h-[98px] w-[98px] rounded-full ml-4 transform hover:scale-110 transition-all duration-300 shadow-lg dark:shadow-white/10"
+          />
+        </div>
+      </div>
+
+      <!-- Chat Bubbles Downside -->
+      <div
+        class="flex w-full flex-col-reverse [@media(min-width:1200px)]:flex-row gap-y-[32px] justify-between items-center"
+      >
+        <div
+          class="flex items-center gap-x-[15px] scroll-animate"
+          data-aos="fade-right"
+          data-aos-delay="400"
+        >
+          <div
+            class="bg-white dark:bg-dark-secondary shadow-md dark:shadow-white/10 px-[30px] py-[15px] rounded-[10px] hover:shadow-xl transition-all duration-300"
+          >
+            <p
+              class="font-medium text-secondary dark:text-[#2F281E] transition-colors duration-200"
+            >
+              I can design you website
+            </p>
+          </div>
+          <img
+            src="/images/Avator-3.jpg"
+            alt="Website Image"
+            class="h-[98px] w-[98px] rounded-full mr-4 transform hover:scale-110 transition-all duration-300 shadow-lg dark:shadow-white/10"
+          />
+        </div>
+
+        <div
+          class="flex items-center gap-x-[15px] scroll-animate"
+          data-aos="fade-left"
+          data-aos-delay="500"
+        >
+          <div
+            class="order-2 bg-[#fff] shadow-md dark:shadow-white/10 px-[30px] py-[15px] rounded-[10px] hover:shadow-xl transition-all duration-300"
+          >
+            <p
+              class="font-medium text-secondary dark:text-[#2F281E] transition-colors duration-200"
+            >
+              I can help marketing strategy
+            </p>
+          </div>
+          <img
+            src="/images/Avator-4.jpg"
+            alt="Marketing Image"
+            class="order-1 h-[98px] w-[98px] rounded-full ml-4 transform hover:scale-110 transition-all duration-300 shadow-lg dark:shadow-white/10"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-12 scroll-animate" data-aos="fade-up" data-aos-delay="600">
+      <button
+        class="inline-flex dark:hover:bg-[#02897A]/40 items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-[#02897A] hover:bg-primary-dark transition-all duration-300 transform hover:scale-105 hover:shadow-lg"
+      >
+        Contact our expert
+      </button>
+    </div>
+  </div>
+</section>
