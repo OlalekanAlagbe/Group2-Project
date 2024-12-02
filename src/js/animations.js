@@ -34,13 +34,6 @@ document.addEventListener("DOMContentLoaded", initAnimations)
 // Navbar scroll effect
 window.addEventListener("scroll", () => {
   const navbar = document.querySelector("nav")
-  // if (window.scrollY > 0) {
-  //   navbar.classList.add('shadow-lg', 'backdrop-blur-sm', 'bg-white/90');
-  //   navbar.classList.remove('bg-white');
-  // } else {
-  //   navbar.classList.remove('shadow-lg', 'backdrop-blur-sm', 'bg-white/90');
-  //   navbar.classList.add('bg-white');
-  // }
 })
 
 // Add parallax effect

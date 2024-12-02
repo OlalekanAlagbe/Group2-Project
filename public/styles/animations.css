@@ -372,3 +372,24 @@
     transform: translateY(0);
     opacity: 1;
 }
+
+/* Add this to your existing animations */
+
+@keyframes pulse-scale {
+    0% {
+        transform: scale(0.95);
+        opacity: 0.8;
+    }
+    50% {
+        transform: scale(1.05);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(0.95);
+        opacity: 0.8;
+    }
+}
+
+.animate-pulse-scale {
+    animation: pulse-scale 1.5s ease-in-out infinite;
+}

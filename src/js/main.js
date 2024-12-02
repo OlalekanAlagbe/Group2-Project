@@ -42,7 +42,6 @@ async function initApp() {
       "Loader",
       "Navbar",
       "Hero",
-      // "Features"
       "Rectangles",
       "Process",
       "Strategies",
