@@ -2,11 +2,13 @@
 
 <nav
   class="bg-dark-bg border-none relative shadow-none w-full px-4 md:px-0 transition-colors duration-200"
+  data-aos="fade-down"
+  data-aos-duration="800"
 >
   <div class="container-custom container w-full md:w-[90%] mx-auto py-4">
     <div class="flex items-center justify-between">
       <!-- Logo and Product Name -->
-      <div class="flex-shrink-0 flex items-center gap-4">
+      <div class="flex-shrink-0 flex items-center gap-4" data-aos="fade-right" data-aos-delay="200">
         <img src="/images/logo.png" alt="Logo" class="h-[36.36px]" />
         <span
           class="font-['Poppins'] cursor-pointer text-[30px] leading-[28px] font-bold text-accent dark:text-dark-text"
@@ -19,10 +21,13 @@
         <!-- Desktop Navigation -->
         <div
           class="hidden [@media(min-width:1024px)]:flex items-center space-x-8 mr-6"
+          data-aos="fade-down"
+          data-aos-delay="400"
         >
+          <!-- Navigation links with animations -->
           <a
             href="#"
-            class="font-['Poppins'] text-[16px] font-[600] leading-[28px] text-secondary dark:text-dark-text"
+            class="font-['Poppins'] text-[16px] font-[600] leading-[28px] text-secondary dark:text-dark-text hover:scale-110 transition-transform"
             >Product</a
           >
           <a
@@ -43,7 +48,7 @@
         </div>
 
         <!-- Auth Buttons -->
-        <div class="hidden md:flex items-center space-x-6">
+        <div class="hidden md:flex items-center space-x-6" data-aos="fade-left" data-aos-delay="600">
           <button
             class="w-[102px] h-[43px] text-accent dark:text-dark-text font-['Poppins'] font-semibold text-base border border-[#BCD0E5] dark:border-dark-text rounded-[4px] hover:bg-gray-50 dark:hover:bg-dark-secondary dark:hover:text-[#173A56] transition-colors"
           >

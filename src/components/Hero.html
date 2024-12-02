@@ -1,23 +1,21 @@
 <!DOCTYPE html>
 <main
   class="relative w-full clip-ellipse from-[#EDEDED] to-[##FFFFFF00] mb-[150px]"
+  data-aos="fade-up"
+  data-aos-duration="1000"
 >
-  <!-- Grey section with curve -->
-  <!-- <div
-    class="absolute inset-0 bg-gradient-to-b from-[#ffffff] to-[#EDEDED] dark:bg-dark-bg transition-colors duration-200"
-  ></div> -->
-
-  <!-- Existing content -->
-  <div
-    class="relative w-full container md:w-[90%] md:mx-auto py-12 md:py-20 flex flex-col [@media(min-width:840px)]:flex-row items-center justify-between px-4 md:px-[13px]"
-  >
+  <div class="relative w-full container md:w-[90%] md:mx-auto py-12 md:py-20 flex flex-col [@media(min-width:840px)]:flex-row items-center justify-between px-4 md:px-[13px]">
+    <!-- Left content -->
     <div
       class="order-2 [@media(min-width:840px)]:order-1 text-center md:text-left mt-8 md:mt-0"
       data-aos="fade-right"
-      data-aos-duration="1000"
+      data-aos-duration="1200"
+      data-aos-delay="200"
     >
       <h1
         class="text-3xl md:text-[40px] font-['Poppins'] font-bold text-secondary dark:text-dark-text leading-[60px] mb-4 md:mb-8 transition-colors duration-200"
+        data-aos="fade-up"
+        data-aos-delay="400"
       >
         Work at the speed <br />
         of thought
@@ -25,6 +23,8 @@
 
       <p
         class="text-[18px] md:text-lg text-secondary font-['Poppins'] dark:text-dark-muted font-normal leading-[28px] max-w-lg transition-colors duration-200"
+        data-aos="fade-up"
+        data-aos-delay="600"
       >
         Tools, tutorials, design and innovation experts, all in one place! The
         most intuitive way to imagine your next user experience.
@@ -32,6 +32,8 @@
 
       <div
         class="mt-8 flex flex-row gap-x-[28px] items-center justify-center md:justify-start"
+        data-aos="fade-up"
+        data-aos-delay="800"
       >
         <button
           class="bg-[#02897a] transition-all duration-300 transform hover:scale-105 hover:shadow-lg dark:hover:bg-[#02897A]/40 text-[16px] leading-[24px] font-['Poppins'] text-white rounded-[4px] w-[142px] md:w-[175px] h-[53px] font-bold hover:bg-primary-dark"
@@ -66,17 +68,22 @@
       </div>
     </div>
 
-    <!-- Hero Image -->
-    <div class="order-1 [@media(min-width:840px)]:order-2" data-aos="fade-left">
+    <!-- Hero Image with enhanced animation -->
+    <div 
+      class="order-1 [@media(min-width:840px)]:order-2" 
+      data-aos="fade-left"
+      data-aos-duration="1200"
+      data-aos-delay="400"
+    >
       <img
         src="/svgs/community.svg"
         alt="Hero"
         class="w-full max-w-lg transform hover:scale-105 transition-all duration-300"
-        data-aos="fade-left"
       />
     </div>
   </div>
 
+  <!-- Product section with staggered animations -->
   <section class="relative w-full bg-no-repeat bg-center bg-cover">
     <div class="container w-full mx-auto px-4 md:px-12 mt-16">
       <h2

@@ -17,14 +17,19 @@ const observer = new IntersectionObserver((entries) => {
   })
 }, observerOptions)
 
-// Animate elements on scroll
-document.addEventListener("DOMContentLoaded", () => {
-  const animatedElements = document.querySelectorAll(".scroll-animate")
-  animatedElements.forEach((el) => {
-    el.classList.add("opacity-0")
-    observer.observe(el)
+// Initialize all animations
+const initAnimations = () => {
+  createScrollProgress()
+
+  // Add hover effect for cards
+  const cards = document.querySelectorAll(".hover-card")
+  cards.forEach((card) => {
+    card.addEventListener("mousemove", handleCardHover)
   })
-})
+}
+
+// Run initialization after DOM is loaded
+document.addEventListener("DOMContentLoaded", initAnimations)
 
 // Navbar scroll effect
 window.addEventListener("scroll", () => {
@@ -36,39 +41,6 @@ window.addEventListener("scroll", () => {
   //   navbar.classList.remove('shadow-lg', 'backdrop-blur-sm', 'bg-white/90');
   //   navbar.classList.add('bg-white');
   // }
-})
-
-// Initialize AOS
-document.addEventListener("DOMContentLoaded", () => {
-  AOS.init({
-    duration: 800,
-    once: true,
-    offset: 100,
-    easing: "ease-in-out"
-  })
-
-  // Add hover effect for cards
-  const cards = document.querySelectorAll(".hover-card")
-  cards.forEach((card) => {
-    card.addEventListener("mousemove", (e) => {
-      const rect = card.getBoundingClientRect()
-      const x = e.clientX - rect.left
-      const y = e.clientY - rect.top
-
-      card.style.setProperty("--mouse-x", `${x}px`)
-      card.style.setProperty("--mouse-y", `${y}px`)
-    })
-  })
-
-  // Smooth scroll for navigation links
-  document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-    anchor.addEventListener("click", function (e) {
-      e.preventDefault()
-      document.querySelector(this.getAttribute("href")).scrollIntoView({
-        behavior: "smooth"
-      })
-    })
-  })
 })
 
 // Add parallax effect
@@ -110,23 +82,3 @@ const smoothScroll = (target, offset = 100) => {
     behavior: "smooth"
   })
 }
-
-// Initialize all animations
-const initAnimations = () => {
-  AOS.init({
-    duration: 800,
-    once: true,
-    offset: 100,
-    easing: "ease-in-out"
-  })
-  createScrollProgress()
-
-  // Add hover effect for cards
-  const cards = document.querySelectorAll(".hover-card")
-  cards.forEach((card) => {
-    card.addEventListener("mousemove", handleCardHover)
-  })
-}
-
-// Run initialization after components are loaded
-document.addEventListener("load", initAnimations)

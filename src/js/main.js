@@ -4,31 +4,32 @@ import AOS from "aos"
 import "aos/dist/aos.css"
 import { initializeTheme } from "./darkMode.js"
 
-// Initialize AOS with specific settings
-AOS.init({
-  duration: 1000,
-  once: true,
-  offset: 100,
-  delay: 100,
-  easing: "ease-in-out",
-  mirror: false
-})
-
 // Initialize app only
 document.addEventListener("DOMContentLoaded", async function () {
   try {
     await initApp()
-    AOS.refresh()
+    
+    // Initialize AOS with specific settings
+    AOS.init({
+      duration: 1000,
+      once: true,
+      offset: 50,
+      delay: 100,
+      easing: "ease-in-out",
+      mirror: false,
+      anchorPlacement: 'top-bottom',
+      disable: 'mobile' // Enable on desktop only
+    })
+
+    // Refresh AOS after a short delay to ensure all components are loaded
+    setTimeout(() => {
+      AOS.refresh()
+    }, 500)
   } catch (error) {
     console.error("Error during initialization:", error)
     const loader = document.getElementById("loader")
     if (loader) loader.remove()
   }
-})
-
-// Refresh AOS on dynamic content changes
-window.addEventListener("load", function () {
-  AOS.refresh()
 })
 
 async function initApp() {
