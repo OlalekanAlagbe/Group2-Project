@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "./animations.css";
+
+:root {
+  /* Light mode */
+  --primary: #02897a;
+  --secondary: #22343d;
+  --accent: #173a56;
+  --background: #ffffff;
+  --text-primary: #22343d;
+  --text-secondary: #374151;
+  --nav-bg: #f8f9fb;
+}
+
+:root[class~="dark"] {
+  --primary: #02897a;
+  --secondary: #f3f4f6;
+  --white: #ffffff;
+  --accent: #60a5fa;
+  --background: #1f2e35;
+  --text-primary: #f3f4f6;
+  --text-secondary: #9ca3af;
+  --curved-bg: #22343d;
+  --nav-bg: #22343d;
+}
+
+/* Global styles */
+@layer base {
+  body {
+    font-family: "Poppins", "Inter", sans-serif;
+    color: var(--secondary);
+    background-color: var(--background);
+    overflow-x: hidden;
+    @apply transition-colors duration-200;
+  }
+
+  body.dark {
+    @apply bg-dark-bg text-dark-text;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: theme("fontWeight.bold");
+    color: var(--secondary);
+  }
+}
+
+/* Component styles */
+@layer components {
+  .btn {
+    @apply px-6 py-3 rounded-lg transition-all duration-300;
+  }
+
+  .btn-primary {
+    @apply bg-primary text-white hover:bg-primary-dark;
+  }
+
+  .btn-secondary {
+    @apply border border-accent text-accent hover:bg-accent/10;
+  }
+
+  /* Navigation specific styles */
+  .nav-link {
+    @apply text-base font-medium text-secondary hover:text-primary transition-colors duration-300;
+  }
+
+  .nav-link-active {
+    @apply font-semibold text-secondary;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+  }
+
+  .container-custom {
+    @apply w-full mx-auto px-4 md:px-[30px] max-w-[1148px];
+  }
+}
+
+/* State styles */
+.loading-state {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  background-color: theme("colors.gray.200");
+}
+
+.error-state {
+  background-color: theme("colors.red.50");
+  border: 1px solid theme("colors.red.200");
+  color: theme("colors.red.700");
+  padding: theme("spacing.4") theme("spacing.3");
+  border-radius: theme("borderRadius.DEFAULT");
+  position: relative;
+}
+
+.success-state {
+  background-color: theme("colors.green.50");
+  border: 1px solid theme("colors.green.200");
+  color: theme("colors.green.700");
+  padding: theme("spacing.4") theme("spacing.3");
+  border-radius: theme("borderRadius.DEFAULT");
+  position: relative;
+}
+
+/* Responsive breakpoints */
+@screen sm {
+  .container {
+    padding-left: theme("spacing.4");
+    padding-right: theme("spacing.4");
+  }
+}
+
+@screen md {
+  .container {
+    padding-left: theme("spacing.6");
+    padding-right: theme("spacing.6");
+  }
+}
+
+@screen lg {
+  .container {
+    padding-left: theme("spacing.8");
+    padding-right: theme("spacing.8");
+  }
+}
+
+/* Custom animations */
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+/* mobile curve */
+.rounded-edge {
+  clip-path: ellipse(210% 100% at top);
+}
+
+/* desktop curve */
+.rounded-edge-d {
+  clip-path: ellipse(150% 100% at top);
+}
+
+/* laptop curve */
+.rounded-edge-l {
+  clip-path: ellipse(70% 100% at top);
+}
